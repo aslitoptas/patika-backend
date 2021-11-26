@@ -1,1 +1,5 @@
-# patika-backend
+## Patika.dev Backend Web Development with Java
+
+Course by [Patika.dev](https://www.patika.dev/) and [Kodluyoruz](https://www.kodluyoruz.org/) 
+
+All work and projects done for the course will be in this repository. 
