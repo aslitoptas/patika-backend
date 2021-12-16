@@ -30,7 +30,7 @@ public class NotOrtalamasi {
         ortalama = (matematik + fizik + kimya + turkce + tarih + muzik)/6.0;
 
         sonuc = (ortalama>=60) ? ("Sınıfı Geçti") : ("Sınıfta Kaldı");
-
+        System.out.println("Ortalamanız: " + ortalama);
         System.out.println(sonuc);
 
     }
