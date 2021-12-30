@@ -18,19 +18,24 @@ public class KullaniciGirisi {
         }else if(userName.equals("patika") && (!password.equals("java123"))){
             System.out.print("Girdiğiniz şifre hatalıdır. Yeni şifre oluştur? (E/H)");
             sifreOlustur = input.nextLine();
+
             if(sifreOlustur.equals("E")){
                 System.out.print("Yeni Şifre: ");
                 newPassword = input.nextLine();
+
+                if (newPassword.equals(password) || newPassword.equals("java123")){
+                    System.out.print("Şifre oluşturulamadı. Lütfen başka şifre giriniz: ");
+                    newPassword = input.nextLine();
+                }else{
+                    System.out.print("Şifre Oluşturuldu!");
+                }
+
+            }else{
+                System.out.print("Giriş yapılamadı!");
             }
 
-            if (newPassword.equals(password) || newPassword.equals("java123")){
-                System.out.print("Şifre oluşturulamadı. Lütfen başka şifre giriniz: ");
-                newPassword = input.nextLine();
-            }
-            else{
-                System.out.print("Şifre Oluşturuldu!");
-            }
-
+        }else{
+            System.out.print("Kullanıcı bulunamadı!");
         }
 
     }
